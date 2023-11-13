@@ -105,5 +105,15 @@ namespace CreatingTextFile
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            FrmStudentRecord frmStudentRecord = new FrmStudentRecord();
+            frmStudentRecord.ShowDialog();
+
+            Close();
+        }
     }
 }

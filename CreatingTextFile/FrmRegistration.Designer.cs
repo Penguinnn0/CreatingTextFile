@@ -48,6 +48,7 @@
             this.btnReg = new System.Windows.Forms.Button();
             this.lblMiddleInitial = new System.Windows.Forms.Label();
             this.tbMiddleInitial = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -239,12 +240,27 @@
             this.tbMiddleInitial.Size = new System.Drawing.Size(55, 28);
             this.tbMiddleInitial.TabIndex = 19;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Crimson;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Panton Narrow-Trial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Location = new System.Drawing.Point(789, 281);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(137, 45);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "Records";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FrmRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(977, 356);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.tbMiddleInitial);
             this.Controls.Add(this.lblMiddleInitial);
             this.Controls.Add(this.btnReg);
@@ -295,5 +311,6 @@
         private System.Windows.Forms.Button btnReg;
         private System.Windows.Forms.Label lblMiddleInitial;
         private System.Windows.Forms.TextBox tbMiddleInitial;
+        private System.Windows.Forms.Button button1;
     }
 }
